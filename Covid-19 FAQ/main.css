@@ -1,0 +1,55 @@
+body {
+    background: url('./Covid.jpeg') no-repeat;
+    background-size: cover;
+    font-family: sans-serif;
+    text-align: center;
+}
+
+h1{
+    color: darkorange;
+    font-size: 120px;
+    text-align: center;
+    padding-top: 20vh;
+    -webkit-text-stroke: black;
+    -webkit-text-stroke-width: 3px;
+}
+.accordion{
+    background-color: black;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    padding: 18px;
+    width: 1000px;
+    border:none;
+    text-align: left;
+    outline: none;
+    font-size: 30px;
+    transition: 0.4s;
+}
+.active, .accordion:hover{
+background: maroon;
+}
+
+.accordion:after{
+    content: '\002b';
+    columns: #777;
+    font-weight: bold;
+    font-size: 40px;
+    float: right;
+    margin-left: 5px;
+}
+
+.active:after{
+    content: '\2212';
+}
+
+.panel{
+    padding:0 18px;
+    box-sizing: border-box;
+    background-color: slategray;
+    width: 1000px;
+    margin:auto;
+    overflow:hidden;
+    max-height: 0;
+    transition: max-height 0.2s ease-out;
+}
